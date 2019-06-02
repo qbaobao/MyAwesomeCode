@@ -5,5 +5,6 @@ using namespace std;
 int main()
 {
     int a = 0;
-    cout << "yes!" << endl;    return;
+    cout << "yes!" << endl;
+    return;
 }
