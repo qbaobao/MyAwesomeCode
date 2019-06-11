@@ -47,7 +47,7 @@ int threeSumClosest(vector<int>& nums, int target) {
 				for (index = k, k = k - 1; nums[k] == nums[index] && j < k; k--);
 			}
 		}
-		for (index = i, i = i + 1; nums[i] == nums[index] && i < len-2; i++);
+		for (index = i, i = i + 1; nums[i] == nums[index] && i < len - 2; i++);
 	}
 	return result;
 }
