@@ -14,6 +14,9 @@ You may assume that the maximum length of s is 1000.
     2. 动态转移方程
         dp[i][j] = (str[i]==str[j] && dp[i+1][j-1]=1(表示i-->j中间字符串也是回文))
         dp[i][j] = 0
+    3. 初始化
+        dp[i][i] = 1
+        str[i] = str[i+1] ===>>> dp[i][i+1] = 1
 */
 class Solution {
 public:
