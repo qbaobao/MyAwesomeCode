@@ -21,7 +21,7 @@ You may assume that the maximum length of s is 1000.
 class Solution {
 public:
     string longestPalindrome(string s) {
-        if (s.lenght() <= 1) {
+        if (s.size() <= 1) {
             return s;
         }
         vector<vector<int>> dp(s.length(), vector<int>(s.length(), 0));
@@ -37,9 +37,9 @@ public:
             }
         }
 
-        for((int i = 3; i < s.size(); i++) {
+        for(int i = 3; i <= s.size(); i++) {
             for(int j = 0; j + i - 1 < s.size(); j++) {
-                if (s[j] == [j + i - 1] && dp[j+1][(j + i - 1) - 1] == 1) {
+                if ((s[j] == s[j + i - 1]) && (dp[j+1][(j + i - 1) - 1] == 1)) {
                     dp[j][j+i-1] = 1;
                     maxLen = i;
                     start = j;
