@@ -1,0 +1,31 @@
+class MedianFinder {
+public:
+    /** initialize your data structure here. */
+    MedianFinder() {
+        listLen = 0; 
+    }
+    
+    void addNum(int num) {
+        vec[num]++;
+        sort(vec.begin(), vec.end());
+        listLen++;
+    }
+    
+    double findMedian() {
+        if (listLen %2 == 0) {
+            return (((double)vec[listLen / 2 - 1] + (double)vec[listLen / 2]) / 2.0);
+        } else {
+            return (double)vec[listLen / 2];
+        }
+    }
+private:
+    int listLen;
+    map<int, int>m;
+};
+
+/**
+ * Your MedianFinder object will be instantiated and called as such:
+ * MedianFinder* obj = new MedianFinder();
+ * obj->addNum(num);
+ * double param_2 = obj->findMedian();
+ */
