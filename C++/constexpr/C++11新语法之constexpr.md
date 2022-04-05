@@ -15,7 +15,7 @@ void InitArr2(const int s) {
 }
 ```
 
-![constexpr图1](D:\code\git\MyAwesomeCode\C++\constexpr\constexpr图1.png)
+![constexpr图1](https://github.com/qbaobao/MyAwesomeCode/blob/master/C%2B%2B/constexpr/constexpr%E5%9B%BE1.png)
 
 从上图可以看出，const修饰的值不一定都是常量。
 
@@ -63,7 +63,7 @@ int num1; // OK
 constexpr num = 1 + num1; // ERR
 ```
 
-![image-20220405201700539](C:\Users\xqma3\AppData\Roaming\Typora\typora-user-images\image-20220405201700539.png)
+![image-20220405201700539](https://github.com/qbaobao/MyAwesomeCode/blob/master/C%2B%2B/constexpr/image-20220405201700539.png)
 
 ### constexpr修饰函数
 
@@ -110,7 +110,7 @@ int main()
 }
 ```
 
-![image-20220405203418240](C:\Users\xqma3\AppData\Roaming\Typora\typora-user-images\image-20220405203418240.png)
+![image-20220405203418240](https://github.com/qbaobao/MyAwesomeCode/blob/master/C%2B%2B/constexpr/image-20220405203418240.png)
 
 ### constexpr修饰构造函数
 
