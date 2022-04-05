@@ -15,7 +15,7 @@ void InitArr2(const int s) {
 }
 ```
 
-![](C:\Users\xqma3\OneDrive\桌面\constexpr图1.png)
+![constexpr图1](D:\code\git\MyAwesomeCode\C++\constexpr\constexpr图1.png)
 
 从上图可以看出，const修饰的值不一定都是常量。
 
