@@ -8,7 +8,7 @@
 
 C++17已不支持。
 
-![image-20220406215814988](C:\Users\xqma3\AppData\Roaming\Typora\typora-user-images\image-20220406215814988.png)
+![image-20220406215814988](https://github.com/qbaobao/MyAwesomeCode/blob/master/C%2B%2B/smart_ptr/image-20220406215814988.png)
 
 最简单的智能指针实现。实现参见<memory>。auto_ptr使用时，需要注意指针权限的转移和指针的生命周期管理。
 
@@ -25,7 +25,7 @@ int main() {
 }
 ```
 
-![image-20220406220443532](C:\Users\xqma3\AppData\Roaming\Typora\typora-user-images\image-20220406220443532.png)
+![image-20220406220443532](https://github.com/qbaobao/MyAwesomeCode/blob/master/C%2B%2B/smart_ptr/image-20220406220443532.png)
 
 ## unique_ptr
 
@@ -71,7 +71,7 @@ int main() {
 }
 ```
 
-![image-20220406221328795](C:\Users\xqma3\AppData\Roaming\Typora\typora-user-images\image-20220406221328795.png)
+![image-20220406221328795](https://github.com/qbaobao/MyAwesomeCode/blob/master/C%2B%2B/smart_ptr/image-20220406221328795.png)
 
 上图中，比较规范的做法是采用**make_unique**创建unique智能指针。
 
@@ -124,7 +124,7 @@ int main() {
 }
 ```
 
-![image-20220406224223798](C:\Users\xqma3\AppData\Roaming\Typora\typora-user-images\image-20220406224223798.png)
+![image-20220406224223798](https://github.com/qbaobao/MyAwesomeCode/blob/master/C%2B%2B/smart_ptr/image-20220406224223798.png)
 
 ## weak_ptr
 
@@ -157,7 +157,7 @@ int main() {
 }
 ```
 
-![image-20220406225621986](C:\Users\xqma3\AppData\Roaming\Typora\typora-user-images\image-20220406225621986.png)
+![image-20220406225621986](https://github.com/qbaobao/MyAwesomeCode/blob/master/C%2B%2B/smart_ptr/image-20220406225621986.png)
 
 ## 智能指针使用限制
 
@@ -206,7 +206,7 @@ int main() {
    }
    ```
 
-   ![image-20220406232124791](C:\Users\xqma3\AppData\Roaming\Typora\typora-user-images\image-20220406232124791.png)
+   ![image-20220406232124791](https://github.com/qbaobao/MyAwesomeCode/blob/master/C%2B%2B/smart_ptr/image-20220406232124791.png)
 
    从图中可以看出，ppA和ppB指向的资源并没有释放。(没有调用析构函数)所以此处造成了资源泄露。
 
